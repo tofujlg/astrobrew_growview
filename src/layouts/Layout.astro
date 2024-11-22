@@ -23,7 +23,12 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style lang="scss" is:global>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "Ligo";
+  src: url("../assets/font/Ligo.ttf") format("ttf")
+}
 
 
 :root{
@@ -32,19 +37,17 @@ const { title } = Astro.props;
 }
 
 body, html{
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+   font-family: "Noto Sans JP", sans-serif;
+   scroll-behavior: smooth;
     margin: 0px;
     overflow-x: hidden;
 }
 .block{
     display: block;
 }
-.h1-title, .h2-title{
-    font-weight: 700;
-}
 .h1-title{
     font-size: 4.2rem;
+    font-family: 'Ligo';
 }
 .h2-title{
     font-size: 3rem;
